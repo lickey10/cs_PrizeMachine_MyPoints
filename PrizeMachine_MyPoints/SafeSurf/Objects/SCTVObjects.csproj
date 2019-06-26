@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F15BE7D-D1BE-4EA8-A57A-F9FA41AB4A4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCTVObjects</RootNamespace>
+    <AssemblyName>SCTVObjects</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewItem.Designer.cs">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsynTask.cs" />
+    <Compile Include="ColorTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorTabControl.Designer.cs">
+      <DependentUpon>ColorTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fonts\Fonts.cs" />
+    <Compile Include="Glass Forms\Glass2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glass Forms\Glass2.Designer.cs">
+      <DependentUpon>Glass2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glass Forms\GlassWindow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glass Forms\GlassWindow2.Designer.cs">
+      <DependentUpon>GlassWindow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="splashScreen2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glass Forms\ControlHolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glass Forms\ControlHolder.Designer.cs">
+      <DependentUpon>ControlHolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glass Forms\Glass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glass Forms\Glass.Designer.cs">
+      <DependentUpon>Glass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glass Forms\GlassWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glass Forms\GlassWindow.Designer.cs">
+      <DependentUpon>GlassWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="images.cs" />
+    <Compile Include="onlineMediaType.cs" />
+    <Compile Include="HTMLCodes.cs" />
+    <Compile Include="listings.cs" />
+    <Compile Include="media.cs" />
+    <Compile Include="playlist.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sound.cs" />
+    <Compile Include="splashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenNew.Designer.cs">
+      <DependentUpon>SplashScreenNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools.cs" />
+    <Compile Include="TriviaBar\TriviaBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriviaBar\TriviaBar.Designer.cs">
+      <DependentUpon>TriviaBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaButtons.cs" />
+    <Compile Include="VLC.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddNewItem.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glass Forms\Glass2.resx">
+      <DependentUpon>Glass2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glass Forms\GlassWindow2.resx">
+      <DependentUpon>GlassWindow2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashScreen2.resx">
+      <DependentUpon>splashScreen2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glass Forms\ControlHolder.resx">
+      <DependentUpon>ControlHolder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glass Forms\Glass.resx">
+      <DependentUpon>Glass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glass Forms\GlassWindow.resx">
+      <DependentUpon>GlassWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashScreen.resx">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenNew.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreenNew.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Fonts\ChocolateDropsNF.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\CHRIstmasCard.TTF" />
+    <EmbeddedResource Include="Fonts\Fonts\claw1.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\claw2.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\CoffeeTin Initials.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\Comicsmash.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\GhostWriter.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\Grange.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\graveyrd.ttf" />
+    <EmbeddedResource Include="Fonts\Fonts\GreatLakesShadowNF.ttf" />
+    <EmbeddedResource Include="TriviaBar\TriviaBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriviaBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="SplashTest.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
